@@ -88,21 +88,49 @@ export default function SolarSystem() {
         };
 
         const mercury = createPlanet(3.2, "mercury.jpg", 28);
+        const venus = createPlanet(5.8, "venus.jpg", 44);
+        const earth = createPlanet(6, "earth.jpg", 62);
+        const mars = createPlanet(4, "mars.jpg", 78);
+        const jupiter = createPlanet(12, "jupiter.jpg", 100);
         const saturn = createPlanet(10, "saturn.jpg", 138, {
           innerRadius: 10,
           outerRadius: 20,
           texture: "saturn-ring.png",
         });
+        const uranus = createPlanet(7, "uranus.jpg", 176, {
+          innerRadius: 7,
+          outerRadius: 12,
+          texture: "uranus-ring.png",
+        });
+        const neptune = createPlanet(7, "neptune.jpg", 200);
+        const pluto = createPlanet(2.8, "pluto.jpg", 216);
 
         const pointLight = new THREE.PointLight(0xffffff, 100, 300, 1);
         scene.add(pointLight);
 
         function animation(time) {
+          //self rotation
           sun.rotateY(0.004);
           mercury.mesh.rotateY(0.004);
-          mercury.object.rotateY(0.04);
+          venus.mesh.rotateY(0.002);
+          earth.mesh.rotateY(0.02);
+          mars.mesh.rotateY(0.018);
+          jupiter.mesh.rotateY(0.04);
           saturn.mesh.rotateY(0.038);
+          uranus.mesh.rotateY(0.03);
+          neptune.mesh.rotateY(0.032);
+          pluto.mesh.rotateY(0.008);
+
+          //around sun rotation
+          mercury.object.rotateY(0.04);
+          venus.object.rotateY(0.015);
+          earth.object.rotateY(0.01);
+          mars.object.rotateY(0.008);
+          jupiter.object.rotateY(0.002);
           saturn.object.rotateY(0.0009);
+          uranus.object.rotateY(0.0004);
+          neptune.object.rotateY(0.0001);
+          pluto.object.rotateY(0.00007);
 
           renderer.render(scene, camera);
         }
