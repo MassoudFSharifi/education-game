@@ -55,20 +55,54 @@ export default function SolarSystem() {
         const sun = new THREE.Mesh(sunGeo, sunMat);
         scene.add(sun);
 
-        const mercuryGeo = new THREE.SphereGeometry(3.2, 30, 30);
-        const mercuryMat = new THREE.MeshStandardMaterial({
-          map: textureLoader.load(path + "mercury.jpg"),
-        });
-        const mercury = new THREE.Mesh(mercuryGeo, mercuryMat);
-        sun.add(mercury);
-        mercury.position.x = 28;
+        const createPlanet = (size, url, position, ring) => {
+          const Geo = new THREE.SphereGeometry(size, 30, 30);
+          const Mat = new THREE.MeshStandardMaterial({
+            map: textureLoader.load(path + url),
+          });
+          const mesh = new THREE.Mesh(Geo, Mat);
+          const object = new THREE.Object3D();
+          object.add(mesh);
+          if (ring) {
+            const ringGeo = new THREE.RingGeometry(
+              ring.innerRadius,
+              ring.outerRadius,
+              32
+            );
+            const ringMat = new THREE.MeshBasicMaterial({
+              map: textureLoader.load(path + ring.texture),
+              side: THREE.DoubleSide,
+            });
+            const ringMesh = new THREE.Mesh(ringGeo, ringMat);
+            object.add(ringMesh);
+            ringMesh.position.x = position;
+            ringMesh.rotation.x = -0.5 * Math.PI;
+          }
+          scene.add(object);
+          mesh.position.x = position;
 
-        const pointLight = new THREE.PointLight(0xffffff, 2, 300);
+          return {
+            mesh,
+            object,
+          };
+        };
+
+        const mercury = createPlanet(3.2, "mercury.jpg", 28);
+        const saturn = createPlanet(10, "saturn.jpg", 138, {
+          innerRadius: 10,
+          outerRadius: 20,
+          texture: "saturn-ring.png",
+        });
+
+        const pointLight = new THREE.PointLight(0xffffff, 100, 300, 1);
         scene.add(pointLight);
 
         function animation(time) {
           sun.rotateY(0.004);
-          mercury.rotateY(0.004);
+          mercury.mesh.rotateY(0.004);
+          mercury.object.rotateY(0.04);
+          saturn.mesh.rotateY(0.038);
+          saturn.object.rotateY(0.0009);
 
           renderer.render(scene, camera);
         }
