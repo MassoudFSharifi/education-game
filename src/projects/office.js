@@ -5,7 +5,7 @@ import WebGL from "three/addons/capabilities/WebGL.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader.js";
 
-export default function Booth() {
+export default function Office() {
   const ref = useRef(false);
   useEffect(() => {
     if (ref.current === false) {
