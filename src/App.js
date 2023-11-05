@@ -5,7 +5,8 @@ import Basic from "./projects/base";
 import ImportObjects from "./projects/import-objects";
 import AppLoading from "./projects/3d-app-loading";
 import CameraMovementGSAP from "./projects/camera-movement-gsap";
+import Booth from "./projects/booth";
 
 export default function App() {
-  return <CameraMovementGSAP />;
+  return <Booth />;
 }

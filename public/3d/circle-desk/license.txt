@@ -1,0 +1,11 @@
+Model Information:
+* title:	Circle_Desk_001
+* source:	https://sketchfab.com/3d-models/circle-desk-001-3b0033ee32d0418eab71ace6a510a110
+* author:	Oxicid (https://sketchfab.com/Oxicid)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Circle_Desk_001" (https://sketchfab.com/3d-models/circle-desk-001-3b0033ee32d0418eab71ace6a510a110) by Oxicid (https://sketchfab.com/Oxicid) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Burger and Fries
+* source:	https://sketchfab.com/3d-models/burger-and-fries-6c85616dab164e6993c45d307ea5085a
+* author:	Cookies and Cream (https://sketchfab.com/Polybyheart)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Burger and Fries" (https://sketchfab.com/3d-models/burger-and-fries-6c85616dab164e6993c45d307ea5085a) by Cookies and Cream (https://sketchfab.com/Polybyheart) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
