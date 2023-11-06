@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cup of Coffee
+* source:	https://sketchfab.com/3d-models/cup-of-coffee-bbabe4090860470d86cb34e5e1c185ae
+* author:	Azamuki (https://sketchfab.com/Azamuki)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cup of Coffee" (https://sketchfab.com/3d-models/cup-of-coffee-bbabe4090860470d86cb34e5e1c185ae) by Azamuki (https://sketchfab.com/Azamuki) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Avali Circle Table
+* source:	https://sketchfab.com/3d-models/avali-circle-table-6e9d31b820fa44cc8ce940c114b8251f
+* author:	Natjo (https://sketchfab.com/Natjo)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Avali Circle Table" (https://sketchfab.com/3d-models/avali-circle-table-6e9d31b820fa44cc8ce940c114b8251f) by Natjo (https://sketchfab.com/Natjo) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
